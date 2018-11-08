@@ -1,0 +1,3 @@
+étude @Autowired and static method
+
+

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.swordgroup</groupId>
+    <artifactId>AlgoliaConnector</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>Algolia Connector</name>
+    <description>Algolia Connector description</description>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.0.1.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+        <jackson.version>2.9.4</jackson.version>
+        <guava.version>24.0-jre</guava.version>
+        <jackson.version>2.9.4</jackson.version>
+        <hibernate-types.version>2.2.0</hibernate-types.version>
+        <slf4j.version>1.7.25</slf4j.version>
+        <norconex-commons-lang.version>1.14.0</norconex-commons-lang.version>
+    </properties>
+
+    <dependencies>
+
+        <!-- Spring -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-batch</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.batch</groupId>
+            <artifactId>spring-batch-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Algolia -->
+        <dependency>
+            <groupId>com.algolia</groupId>
+            <artifactId>algoliasearch</artifactId>
+            <version>[2,]</version>
+        </dependency>
+
+        <!-- MySQL Connector -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+
+        <!-- Jackson/JSON -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-xml</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
+
+        <!-- TODO encore utile ? -->
+
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.8.2</version>
+        </dependency>
+
+        <!-- JSON -->
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20170516</version>
+        </dependency>
+
+        <!-- Guava -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>${guava.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp</artifactId>
+            <version>3.10.0</version>
+        </dependency>
+
+        <!-- pdf -->
+        <!--      <dependency>
+                  <groupId>org.apache.pdfbox</groupId>
+                  <artifactId>pdfbox</artifactId>
+                  <version>2.0.9</version>
+              </dependency>
+
+              <dependency>
+                  <groupId>org.apache.pdfbox</groupId>
+                  <artifactId>pdfbox-debugger</artifactId>
+                  <version>2.0.9</version>
+                  <scope>provided</scope>
+              </dependency>
+-->
+        <!-- parsing /  crawling -->
+        <dependency>
+            <groupId>com.itextpdf</groupId>
+            <artifactId>itextpdf</artifactId>
+            <version>5.5.13</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.tika</groupId>
+            <artifactId>tika-core</artifactId>
+            <version>1.18</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.tika</groupId>
+            <artifactId>tika-parsers</artifactId>
+            <version>1.18</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.norconex.commons</groupId>
+            <artifactId>norconex-commons-lang</artifactId>
+            <version>${norconex-commons-lang.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.norconex.commons</groupId>
+            <artifactId>norconex-commons-lang</artifactId>
+            <version>${norconex-commons-lang.version}</version>
+            <classifier>resources</classifier>
+            <mimeType>zip</mimeType>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.norconex.collectors</groupId>
+            <artifactId>norconex-importer</artifactId>
+            <version>2.8.0</version>
+        </dependency>
+        <!-- Divers -->
+
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.6</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jsoup</groupId>
+            <artifactId>jsoup</artifactId>
+            <version>1.10.3</version>
+        </dependency>
+
+        <!-- <dependency>
+             <groupId>edu.stanford.nlp</groupId>
+             <artifactId>stanford-corenlp</artifactId>
+             <version>3.9.1</version>
+         </dependency>
+         <dependency>
+             <groupId>edu.stanford.nlp</groupId>
+             <artifactId>stanford-corenlp</artifactId>
+             <version>3.9.1</version>
+             <classifier>models</classifier>
+         </dependency>
+         <dependency>
+             <groupId>nlp</groupId>
+             <artifactId>stanford-french-corenlp-models-current</artifactId>
+             <version>1.0</version>
+         </dependency>
+-->
+
+        <!-- Logging -->
+
+
+    </dependencies>
+
+    <!--   <repositories>
+           <repository>
+               <id>in-project</id>
+               <name>In Project Repo</name>
+               <url>file://${project.basedir}/libs</url>
+           </repository>
+       </repositories>
+-->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+        <finalName>${project.artifactId}</finalName>
+    </build>
+
+</project>

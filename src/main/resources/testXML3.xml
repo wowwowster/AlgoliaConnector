@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+
+    <rdf:Description rdf:about='test.jpg'
+                     xmlns:custom='http://custom'>
+        <FirstName>
+            <rdf:Bag>
+                <rdf:li>John</rdf:li>
+                <rdf:li>Jane</rdf:li>
+                <rdf:li>Bob</rdf:li>
+                <rdf:li>Kate</rdf:li>
+            </rdf:Bag>
+        </FirstName>
+        <LastName>
+            <rdf:Bag>
+                <rdf:li>Smith</rdf:li>
+                <rdf:li>Doe</rdf:li>
+                <rdf:li></rdf:li>
+                <rdf:li>Smith</rdf:li>
+            </rdf:Bag>
+        </LastName>
+        <paragraph>
+            <strong>Alors que les Assises du médicament convoquées et mises en oeuvre par le ministère du travail, de
+                l’emploi et de la santé, vont prochainement rendre leurs conclusions, l’Ordre national des pharmaciens
+                (ONP), qui regroupe l’ensemble des pharmaciens de la chaîne du médicament, publie sa contribution en
+                relation avec ses missions.
+            </strong>
+        </paragraph>
+        <paragraph>L’ONP a en charge de<emphasize>&amp;nbsp;veiller à la compétence et à l’indépendance</emphasize>&amp;nbsp;des
+            pharmaciens, ainsi qu’à <emphasize>la sécurité de leurs actes</emphasize>. Sa contribution met l’accent sur sept
+            champs d’action, se déclinant en propositions concrètes, qui visent l’amélioration de la qualité de la prise en
+            charge des patients :
+        </paragraph>
+        <paragraph xmlns:tmp="http://ez.no/namespaces/ezpublish3/temporary/">
+            <ul>
+                <li>
+                    <paragraph xmlns:tmp="http://ez.no/namespaces/ezpublish3/temporary/">L’indépendance des pharmaciens
+                        responsables des industries de santé,
+                    </paragraph>
+                </li>
+                <li>
+                    <paragraph xmlns:tmp="http://ez.no/namespaces/ezpublish3/temporary/">Le signalement des effets
+                        indésirables ou inattendus susceptibles d’être dus à un médicament ou à un dispositif médical,
+                    </paragraph>
+                </li>
+                <li>
+                    <paragraph xmlns:tmp="http://ez.no/namespaces/ezpublish3/temporary/">L’accès aux bases de données, dont
+                        celles anonymisées du Dossier Pharmaceutique en vue de participer à la vigilance sanitaire,
+                    </paragraph>
+                </li>
+                <li>
+                    <paragraph xmlns:tmp="http://ez.no/namespaces/ezpublish3/temporary/">La transparence, le suivi et la
+                        traçabilité des prescriptions hors AMM,
+                    </paragraph>
+                </li>
+                <li>
+                    <paragraph xmlns:tmp="http://ez.no/namespaces/ezpublish3/temporary/">La formation initiale et le
+                        Développement Professionnel Continu des professionnels de santé,
+                    </paragraph>
+                </li>
+                <li>
+                    <paragraph xmlns:tmp="http://ez.no/namespaces/ezpublish3/temporary/">L’information et la publicité
+                        vis-à-vis des professionnels de santé et du public ; les pratiques de visite médicale, officinale et
+                        en établissements de santé,
+                    </paragraph>
+                </li>
+                <li>
+                    <paragraph xmlns:tmp="http://ez.no/namespaces/ezpublish3/temporary/">La transparence sur les liens
+                        d’intérêts.
+                    </paragraph>
+                </li>
+            </ul>
+        </paragraph>
+        <paragraph>Ce document est téléchargeable sur le site de l’Ordre :
+            <strong>www.ordre.pharmacien.fr</strong>
+        </paragraph>
+        <paragraph><emphasize>« Le médicament est un produit d’exception. Ses enjeux et sa gestion sont différents des
+            autres produits. Notre réflexion a porté, dans le cadre de nos missions, sur les compétences et les pratiques
+            des professionnels. L’indépendance et les rapports d’influence ont été au coeur des débats, tout comme les
+            moyens à développer pour générer les signalements et faciliter l’information pour tous.»</emphasize>&amp;nbsp;a
+            déclaré Isabelle Adenot, Président du Conseil national de l’Ordre des pharmaciens. Ajoutant que pour restaurer
+            la confiance du public dans le système sanitaire, il est essentiel <emphasize>« de renforcer le caractère
+                pédagogique de la communication qui lui est destinée.»</emphasize>&amp;nbsp;Jean-Pierre Paccioni, Président
+            de la section B de l’Ordre national des pharmaciens, a quant à lui rappelé que <emphasize>« Les pharmaciens
+                responsables des industries de produits de santé organisent et surveillent l'ensemble des opérations
+                pharmaceutiques de l'entreprise. Les objectifs de santé publique sont leurs priorités. Leur indépendance de
+                décision doit être totale »</emphasize>.
+        </paragraph>
+        <paragraph>Les médicaments et dispositifs médicaux, dont l’égal accès doit être garanti au public, contribuent
+            pleinement aux progrès thérapeutiques et sont source d’amélioration de la qualité de vie.
+        </paragraph>
+        <paragraph>Les évaluations de leur balance bénéfice/risque doivent être régulières et transparentes, en situation
+            réelle d’utilisation, et l’efficience du système sanitaire doit permettre l’accès aux innovations tout en
+            garantissant la sécurité due aux patients.
+        </paragraph>
+        <paragraph>Pour l’ONP, si des améliorations doivent être réalisées, il ne faudrait pas pour autant tomber dans
+            l’excès. Le système sanitaire français est sans nul doute un système perfectible mais il a néanmoins fait aussi
+            preuve d’efficacité. L’amélioration de la coordination, pour réduire l’inertie, et le renforcement de la
+            transparence, pour favoriser l’information, seront d’incontestables axes de progrès.
+        </paragraph>
+    </rdf:Description>
+</rdf:RDF>
